@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white; }
+
+#header {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header #img_logo {
+    width: 20%;
+    height: 15%; }
+  #header #search_box {
+    border: 1px solid #797f86;
+    border-radius: 25px;
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #header #search_box #get_feed {
+      width: 15px;
+      height: 15px; }
+    #header #search_box #keyword {
+      outline: none;
+      border: 0; }
+    #header #search_box input {
+      outline: none;
+      border: 0; }
+
+#feed {
+  background-color: white;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  border: 1px solid #797f86;
+  border-radius: 8px; }
+  #feed img {
+    max-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 4%; }
+  #feed p {
+    word-wrap: break-word;
+    margin: 0px;
+    padding-right: 10px; }
+  #feed p:hover {
+    color: #0083b3; }
+  #feed a {
+    max-height: 50px;
+    text-decoration: none;
+    color: #333333; }
+  #feed article {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    padding-top: 15px; }
+  #feed article:hover {
+    background-color: white;
+    border-radius: 4%; }

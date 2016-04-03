@@ -1,0 +1,103 @@
+$twitterblue : hsla(212,100%,63%,1);
+$colormaintext1 : hsla(212,0%,20%,1);
+$bgcolor : hsla(212,100%,100%,1);
+$bgcolor2 : hsla(212,100%,95%,1);
+$feedbgcolor: hsla(212,100%,100%,1);
+$feedbordercolor: hsla(212,5%,50%,1);
+$textcolor: hsla(196,100%,35%,1);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $bgcolor;
+}
+
+#header {
+
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #img_logo {
+    width: 20%;
+    height: 15%;
+  }
+
+  #search_box {
+
+    border: 1px solid $feedbordercolor;
+    border-radius: 25px;
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #get_feed {
+      width: 15px;
+      height: 15px;
+    }
+
+    #keyword {
+      outline: none;
+      border: 0;
+    }
+
+    input {
+      outline: none;
+      border: 0;
+    }
+
+  }
+}
+
+#feed {
+  background-color: $feedbgcolor;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  border: 1px solid $feedbordercolor;
+  border-radius: 8px;
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 4%;
+  }
+
+  p {
+    word-wrap: break-word;
+    margin: 0px;
+    padding-right: 10px;
+  }
+
+  p:hover {
+    color: $textcolor;
+  }
+
+  a {
+    max-height: 50px;
+    text-decoration: none;
+    color: $colormaintext1;
+  }
+
+  article {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  article:hover {
+    background-color: $bgcolor;
+    border-radius: 4%;
+  }
+}
